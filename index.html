@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Almi</title>
+
+		<link rel="stylesheet" href="./css/bootstrap-3.3.7-dist/css/bootstrap.min.css" media="screen" title="no title">
+		<link rel="stylesheet" href="./css/styles.css" media="screen" title="no title">
+		<link rel="stylesheet" href="./css/animate.css" media="screen" title="no title">
+
+
+	</head>
+	<body>
+
+		<div class="background-image-body">
+
+			<header class="animated fadeInDown">
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <span class="navbar-brand" href="#">Almi</span>
+				    </div>
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				      </ul>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li class="dropdown">
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</header>
+
+			<section id="landing-hero">
+				<div class="container animated fadeInUp">
+					<div class="row">
+						<h1>Build a chatbot for your next event in less than 5 minutes</h1>
+						<h3>A bot creation platform that doesn't require a tech degree</h3>
+						<!-- Large modal -->
+						<div class="center-block">
+							<button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target=".try-now-modal">Try it</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade try-now-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-body">
+								<div class="upper-modal">
+									<h1>Take it for a test drive</h1>
+									<p>
+										Text the number <span class="phone-number">(510) 545-4447</span>
+									</p>
+
+									<ul>
+										<span>Ask questions like: </span>
+										<li>Do I have a meeting tomorrow?</li>
+										<li>Who am I meeting tomorrow?</li>
+									</ul>
+								</div>
+								<h3 class="my-own-bot">Want to build your own bot?</h3>
+								<div class="cta">
+									<h2 class='cta-header'>Sign up for beta access to the bot creation platform</h2>
+									<form class="form-landing-page" name="signUp_form" ng-submit="getNotified()" novalidate>
+										<ng-form="signUp_form">
+												<div class="sign-up" ng-show="!sent">
+													<input type="email"
+														class="flex-item"
+														placeholder="Email Address"
+														ng-model="email.email"
+														ng-pattern="/^([a-zA-Z0-9])+([a-zA-Z0-9._%+-])+@([a-zA-Z0-9_.-])+\.(([a-zA-Z]){2,6})$/" required>
+													<button type="submit" class="btn btn-primary home-submit" ng-disabled="signUp_form.$invalid">
+														<span ng-show="!sending">Request Beta Access</span>
+														<!-- <span ng-show="sending">Sending email...</span> -->
+													</button>
+												</div>
+											<!-- <div class="sign-up sent" ng-show="sent">
+												<button class="flex-item">Thank you! We've received your message</button>
+											</div> -->
+										</ng-form>
+									</form>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		<div class="gradient">
+			<!-- <div class="credibility">
+				<img src="./img/tc-techcrunch.png" alt="TechCrunch logo" />
+			</div> -->
+		</div>
+
+
+
+		</div>
+
+
+
+		<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+		</body>
+</html>
