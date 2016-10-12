@@ -1,27 +1,41 @@
-@import 'https://fonts.googleapis.com/css?family=Quicksand:300,400';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
 
 .background-image-body {
-  // background-image: url("../img/concert.jpg");
-  background: -moz-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/concert.jpg");
-  background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/concert.jpg");
-  background: -o-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/concert.jpg");
-  background: -ms-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/concert.jpg");
+  background-image: url("../img/concert.jpg");
+  background: -moz-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/customer.jpg");
+  background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/customer.jpg");
+  background: -o-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/customer.jpg");
+  background: -ms-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/customer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #999;
   width: 100%;
   height: 100vh;
 
+  // #carousel-example-generic {
+  //    position: absolute;
+  //
+  //    a {
+  //      display: none;
+  //    }
+  //
+  // }
+
+
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
 
     .navbar-brand {
-      font-family: 'Quicksand', sans-serif;
+      font-family: inherit;
       color: #fff;
       padding: 15px 30px;
       font-size: 50px;
+      font-weight: 100;
       line-height: 35px;
 
     }
@@ -31,15 +45,79 @@
     height: 500px;
     padding-top: 10%;
     text-align: center;
+    display: flex;
+    align-items: center;
     h1 {
       color: #ecf0f1;
-      font-size: 50px;
-      font-family: 'Quicksand', sans-serif;
-      font-weight: bold;
-    }
-    h3 {
-      font-family: 'Quicksand', sans-serif;
+      font-size: 4.5em;
+      font-family: inherit;
       font-weight: 400;
+
+      .typewrite {
+        display: inline-block;
+        color: #00ff97;
+        }
+
+      .blinking-cursor {
+        font-weight: 100;
+        font-size: 50px;
+        color: #fff;
+        -webkit-animation: 1s blink step-end infinite;
+        -moz-animation: 1s blink step-end infinite;
+        -ms-animation: 1s blink step-end infinite;
+        -o-animation: 1s blink step-end infinite;
+        animation: 1s blink step-end infinite;
+        }
+
+          @keyframes "blink" {
+            from, to {
+              color: transparent;
+            }
+            50% {
+              color: #fff;
+            }
+          }
+          @-moz-keyframes blink {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: #fff;
+          }
+        }
+
+        @-webkit-keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: #fff;
+          }
+        }
+
+        @-ms-keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: black;
+          }
+        }
+
+        @-o-keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: black;
+          }
+        }
+      }
+    }
+
+    h3 {
+      font-family: inherit;
+      font-weight: 100;
       color: #fff;
 
     }
@@ -50,8 +128,8 @@
 
       button {
         font-size: 34px;
-        font-family: 'Quicksand', sans-serif;
-        background-color: #1abc9c;
+        font-family: inherit;
+        background-color: #05d17d;
 
       }
     }
@@ -63,11 +141,14 @@
         .modal-body {
           border-radius: 15px;
           background-color: #2c3e50;
-          font-family: 'Quicksand', sans-serif;
+          font-family: inherit;
+          border: solid 2px #00ff97;
           .upper-modal {
             height: 300px;
-            h1 {
+            .modal-title {
               color: #fff;
+              font-size: 3.5em !important;
+              font-weight: 100 !important;
               border-bottom: solid 2px #2ecc71;
               padding-bottom: 15px;
               max-width: 580px;
@@ -159,20 +240,58 @@
             }
           }
         }
+      }
 
+      .arrow-container {
+        text-align: center;
+      }
 
-  }
+      .down-arrow {
+        /*display: inline-block;
+        vertical-align: middle;*/
+        padding: 100px;
+        margin-top: 150px;
+      }
 
+      a {
+        display: block;
+        border-radius: 50%;
+      }
 
-  .gradient{
-    background: -moz-linear-gradient(top,rgba(0,0,0,0) 0,#000 67%);
-    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,#000 67%);
-    background: -o-linear-gradient(top,rgba(0,0,0,0) 0,#000 67%);
-    background: -ms-linear-gradient(top,rgba(0,0,0,0) 0,#000 67%);
-    height: 360px;
+      .bottom {
+        display: inline-block;
+        width: 6em;
+        height: 6em;
+        border: 0.5em solid #00ff97;
+        border-radius: 50%;
+        margin-left: 0.75em;
+      }
+
+      .bottom:after {
+        content: '';
+        display: inline-block;
+        margin-top: 0.6em;
+        width: 2.4em;
+        height: 2.4em;
+        border-top: 0.5em solid #00ff97;
+        border-right: 0.5em solid #00ff97;
+        -moz-transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+      }
+
+  .gradient {
+    // background: -moz-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    // background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    // background: -o-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    // background: -ms-linear-gradient(top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
+    // background: -moz-linear-gradient(top,rgba(0,0,0,0) 0,#000 67%);
+    // background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,#000 67%);
+    // background: -o-linear-gradient(top,rgba(0,0,0,0) 0,#000 67%);
+    // background: -ms-linear-gradient(top,rgba(0,0,0,0) 0,#000 67%);
+    height: 100vh;
     width: 100%;
     position: absolute;
     bottom: 0;
-
   }
-}
