@@ -17,7 +17,7 @@ body {
     border-color: transparent; }
     .background-image-body .navbar-default .navbar-brand {
       font-family: inherit;
-      color: #2ecc71;
+      color: #fff;
       padding: 15px 30px;
       font-size: 50px;
       font-weight: 100;
@@ -27,7 +27,8 @@ body {
     padding-top: 10%;
     text-align: center;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 15px; }
     .background-image-body #landing-hero h1 {
       color: #ecf0f1;
       font-size: 4.5em;
@@ -195,13 +196,25 @@ a {
   position: absolute;
   bottom: 0; }
 
-.card {
-  font-family: inherit;
-  font-size: 2em;
-  font-weight: 300; }
-  .card .card-title {
-    font-size: .8em;
-    font-weight: 500;
-    border-bottom: 1px solid #000; }
+.features {
+  background: -moz-linear-gradient(bottom, transparent 0, #000 67%);
+  background: -webkit-linear-gradient(bottom, transparent 0, #000 67%);
+  background: -o-linear-gradient(bottom, transparent 0, #000 67%);
+  background: -ms-linear-gradient(bottom, transparent 0, #000 67%);
+  padding: 30px 0 0 0; }
+  .features .card {
+    font-family: inherit;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 20px; }
+    .features .card .img-wrapper {
+      text-align: center; }
+      .features .card .img-wrapper .card-img {
+        width: 6em; }
+    .features .card .card-title {
+      font-size: .8em;
+      font-weight: 500;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #000; }
 
 /*# sourceMappingURL=styles.css.map */
